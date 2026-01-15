@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "atechsuite",
+	"version": "${version}",
+	"name": "ATechSuite",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/atechsuite/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.github.alexporter7.ats.ATechSuite"
+		],
+		"client": [
+			"com.github.alexporter7.ats.ATechSuiteClient"
+		],
+		"fabric-datagen": [
+			"com.github.alexporter7.ats.ATechSuiteDataGenerator"
+		]
+	},
+	"mixins": [
+		"atechsuite.mixins.json",
+		{
+			"config": "atechsuite.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
