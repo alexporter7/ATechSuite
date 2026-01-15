@@ -16,7 +16,8 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.github.alexporter7.ats.ATechSuite"
+			"com.github.alexporter7.ats.ATechSuite",
+			"com.github.alexporter7.atmaterials.ATechMaterials"
 		],
 		"client": [
 			"com.github.alexporter7.ats.ATechSuiteClient"
