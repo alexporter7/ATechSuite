@@ -1,0 +1,14 @@
+{
+  "materials": [
+    {
+      "name": "iron",
+      "label": "Iron",
+      "chemicalSymbol": "Fe",
+      "forms": [],
+      "meltingPoint": "2800",
+      "weight": "55",
+      "temperature": "70",
+      "tintHexCode": "#a19f99"
+    }
+  ]
+}

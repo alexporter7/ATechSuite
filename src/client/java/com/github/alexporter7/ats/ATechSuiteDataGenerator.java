@@ -1,5 +1,6 @@
 package com.github.alexporter7.ats;
 
+import com.github.alexporter7.ats.api.datagen.ATSModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 

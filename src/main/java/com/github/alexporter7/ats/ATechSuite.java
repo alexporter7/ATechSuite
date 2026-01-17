@@ -1,6 +1,6 @@
 package com.github.alexporter7.ats;
 
-import com.github.alexporter7.ats.api.plugin.ATPlugin;
+import com.github.alexporter7.ats.api.plugin.ATSPlugin;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -10,7 +10,7 @@ public class ATechSuite implements ModInitializer {
 
 	public static final String MOD_ID = "atechsuite";
 
-	public static final ATPlugin AT_CORE = new ATPlugin(
+	public static final ATSPlugin AT_CORE = new ATSPlugin(
 			"ATechSuite",
 			"atechsuite",
 			"0.1.0a",
