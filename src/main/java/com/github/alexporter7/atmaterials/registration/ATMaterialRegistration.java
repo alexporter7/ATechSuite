@@ -58,12 +58,14 @@ public class ATMaterialRegistration {
                     materialForm.toString(),
                     material.name());
 
+            String itemName = getMaterialItemName(material.name(), materialForm);
             ResourceKey<Item> itemKey = ResourceKey.create(
                     Registries.ITEM, Identifier.fromNamespaceAndPath(
                             ATechMaterials.MOD_ID,
-                            getMaterialItemName(material.name(), materialForm)));
+                            itemName));
 
             MaterialItem item = itemFactory.apply(settings.setId(itemKey));
+            ITEMS.put(itemName, item);
             Registry.register(
                     BuiltInRegistries.ITEM,
                     itemKey,
